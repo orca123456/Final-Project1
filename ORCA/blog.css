@@ -1,0 +1,79 @@
+body {
+    font-family: sans-serif
+    margin: 0;
+    padding: 0;
+    background-image: url(bgpft.jpg);
+    background-size: cover;
+}
+
+header {
+    background-color: black;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+main {
+    padding: 20px;
+}
+
+.post {
+    margin-bottom: 40px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+}
+
+.post h2 {
+    margin-top: 0;
+    color: white;
+}
+
+.post img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.post p {
+    margin-bottom: 10px;
+    color: aqua;
+}
+
+.post a {
+    display: block;
+    margin-top: 10px;
+    text-decoration: none;
+    color: #007bff;
+}
+
+footer {
+    background-color: #000000;
+    padding: 20px;
+    text-align: center;
+}
+
+footer nav a {
+    color: white;
+    text-decoration: none;
+    padding: 5px 10px;
+    border: 1px solid white;
+    border-radius: 5px;
+}
+
+footer nav a:hover {
+    background-color: #ff004f;
+    color: black;
+}
+
+.post img {
+    width: 100%; 
+    max-height: 500px; 
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+
+h2.post p {
+    white-space: normal; 
+}

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume/CV</title>
+    <link rel="stylesheet" href="resume.css">
+</head>
+<body>
+    <div class="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="Pic.jpg" alt="Profile Picture">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About me</h1>
+                    <p>Hi there! I'm Den Mark Orca,
+
+                        BSIT student, adventure seeker, and aspiring web wizard.                       
+
+                        Ever since I can remember, I've been captivated by the wonders of technology.                       
+
+                        Currently, I'm on a journey through the world of web development, exploring new languages and frameworks, and turning ideas into digital realities.                        
+
+                        When I'm not coding, you'll find me outdoors, soaking up nature's beauty, or diving into a thrilling book. And of course, I never say no to a good cup of coffee!                       
+
+                        I believe in the power of learning through experience, and I'm excited to see where this adventure takes me next. Let's connect and explore together!</p>
+    
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('Experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('Education')">Education</p>
+                        <p class="tab-links" onclick="opentab('Certification')">Certification</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Communication</span><br>Ability to effectively communicate with team members.</li>
+                            <li><span>Responsive Design</span><br>Ability to create websites that work seamlessly across various devices and screen sizes.</li>
+                            <li><span>Problem-Solving and Adaptability</span><br>Capacity to analyze complex problems.</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="Experience">
+                        <ul>
+                            <li><span>Built personal websites</span><br>Experimenting with various design frameworks.</li>
+                            <li><span>Contributed to open-source projects</span><br>Gaining valuable experience and collaborating with developers.</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="Education">
+                        <ul>
+                            <li><span>Graduated SHS</span><br>Philippine Academy of Sakya Davao</li>
+                            <li><span>Course</span><br>Bachelor of Science in Information Technology</li>
+                            <li><span>School</span><br>Jose Maria College</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="Certification">
+                        <ul>
+                            <li><span>FreecodeCamp</span><br>Responsive Web Design</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>   
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+        <footer>
+            <nav>
+                <a href="index.html"> Back to Home</a>
+            </nav>
+        </footer>
+</body>
+</html>

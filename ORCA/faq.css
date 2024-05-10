@@ -1,0 +1,59 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #000000;
+    background-image: url(bgpft.jpg);
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #fff;
+}
+
+.faq {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+h2 {
+    margin-top: 0;
+}
+
+p {
+    margin-top: 10px;
+}
+
+@media (max-width: 600px) {
+    .faq {
+        padding: 15px;
+    }
+}
+footer {
+    background-color: #000000;
+    padding: 10px;
+    text-align: center;
+}
+
+footer nav a {
+    color: white;
+    text-decoration: none;
+    padding: 5px 10px;
+    border: 1px solid white;
+    border-radius: 5px;
+}
+
+footer nav a:hover {
+    background-color: #ff004f;
+    color: black;
+}
